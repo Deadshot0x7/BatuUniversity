@@ -19,7 +19,10 @@ def start(update, context):
 
 def help(update, context):
     """Send a message when the command /help is issued."""
-    update.message.reply_text('Help!')
+    update.message.reply_text('Welcome to the Univeristy Bot')
+    update.message.reply_text('                             ')
+    update.message.reply_text('/start            Start the Telegram bot')
+    update.messgae.reply_text("/PerInfo          show you personal Information with PRN Number ")
 
 def echo(update, context):
     """Echo the user message."""
