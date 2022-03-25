@@ -15,7 +15,7 @@ TOKEN = '5284073049:AAFIjNHJCPb5CoDOAa_jXEyQ4ahrVjgm73A'
 def start(update, context):
     """Send a message when the command /start is issued."""
     update.message.reply_text('Welcome to the Univeristy Bot ')
-    
+    update.message.reply_text('Developed By Sayyed Viquar Ahmed')    
 
 def help(update, context):
     """Send a message when the command /help is issued."""
