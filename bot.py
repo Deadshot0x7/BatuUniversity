@@ -1,4 +1,5 @@
 import logging
+from turtle import update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import os
 PORT = int(os.environ.get('PORT', '8443'))
@@ -37,6 +38,8 @@ def mantasha (update, context):
 
     update.message.reply_text ('Hello Ahmed , I hope youre doing well today ')
 
+def isue(update, Context):
+    update.messaage.reply_text('https://github.com/Deadshot0x7/BatuUniversity/issues')
 def main():
     """Start the bot."""
     # Create the Updater and pass it your bot's token.
@@ -50,7 +53,7 @@ def main():
     # on different commands - answer in Telegram
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help))
-    
+    dp.add_handler(CommandHandler("issue",isue))
 
     # on noncommand i.e message - echo the message on Telegram
     dp.add_handler(MessageHandler(Filters.text, echo))
