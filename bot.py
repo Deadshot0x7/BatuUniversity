@@ -59,7 +59,7 @@ def main():
         listen="0.0.0.0",
         port=int(PORT),
         url_path=TOKEN,
-        webhook_url='https://mahatbtbot.herokuapp.com/' + TOKEN
+        webhook_url='https://batuuniversitybot.herokuapp.com/' + TOKEN
     )
 
     # Run the bot until you press Ctrl-C or the process receives SIGINT,
