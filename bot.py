@@ -24,6 +24,7 @@ def help(update, context):
     
     update.message.reply_text('/start            Start the Telegram bot')
     update.message.reply_text("/PerInfo          show you personal Information with PRN Number ")
+    update.message.reply_text("/Acdemic           Show you admeic Information based on your ")
     
 
 def echo(update, context):
@@ -45,7 +46,8 @@ def isue(update, context):
 def name(update,context):
     response.personal()
 
-    
+def ademic(update,context):
+    response.acdemic()
 
 
 def main():
@@ -62,7 +64,8 @@ def main():
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help))
     dp.add_handler(CommandHandler("issue",isue))
-
+    dp.add_handler(CommandHandler("perinfo",name))
+    dp.add_handler(CommandHandler("ademic",ademic))
     # on noncommand i.e message - echo the message on Telegram
     dp.add_handler(MessageHandler(Filters.text, echo))
 
