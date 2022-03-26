@@ -1,6 +1,7 @@
 import logging
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import os
+from modules import response
 PORT = int(os.environ.get('PORT', '8443'))
 
 # Enable logging
@@ -41,7 +42,10 @@ def isue(update, context):
 
     update.message.reply_text ('Got a Issue Submit yout issue at ')
 
+def name(update,context):
+    response.personal()
 
+    
 
 
 def main():

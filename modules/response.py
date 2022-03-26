@@ -1,3 +1,3 @@
 import time  as t 
 
-def name():
+def personal()
