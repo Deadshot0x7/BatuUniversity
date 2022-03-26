@@ -1,6 +1,6 @@
 import time  as t 
-
-def personal():
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+def personal(update, c):
     return "Welcome to the Personal function"
 
 
