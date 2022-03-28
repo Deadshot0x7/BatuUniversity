@@ -44,12 +44,12 @@ def isue(update, context):
     update.message.reply_text ('Got a Issue Submit yout issue at ')
 
 def personal(update,context):
-    update.message_text("Welcome to the Personal Function")
+    update.message.reply_text("Welcome to the Personal Function")
     
 
 
 def acdemic(update,context):
-    update.message_text("Welcome to the Ademic Function")
+    update.message.reply_text("Welcome to the Ademic Function")
 
 
 def main():
