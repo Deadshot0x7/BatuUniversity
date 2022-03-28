@@ -48,9 +48,11 @@ def name():
     
 
 
-def college():
-    response.acdemic()
-    
+def college(update,context):
+
+    update.message.reply_text("======================================") 
+    update.message.reply_text("     Welcome the Ademic               ")
+    update.message.reply_text("======================================")
 
 
 def main():
