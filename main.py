@@ -43,12 +43,12 @@ def isue(update, context):
 
     update.message.reply_text ('Got a Issue Submit yout issue at ')
 
-def name(update,context):
+def name():
     response.personal()
     
 
 
-def college(update,context):
+def college():
     response.acdemic()
     
 
