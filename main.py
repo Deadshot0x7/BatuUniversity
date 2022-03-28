@@ -43,13 +43,14 @@ def isue(update, context):
 
     update.message.reply_text ('Got a Issue Submit yout issue at ')
 
-def personal(update,context):
-    update.message.reply_text("Welcome to the Personal Function")
+def name(update,context):
+    response.personal()
     
 
 
-def acdemic(update,context):
-    update.message.reply_text("Welcome to the Ademic Function")
+def college(update,context):
+    response.acdemic()
+    
 
 
 def main():
@@ -66,8 +67,8 @@ def main():
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help))
     dp.add_handler(CommandHandler("issue",isue))
-    dp.add_handler(CommandHandler("perinfo",personal))
-    dp.add_handler(CommandHandler("ademic",acdemic))
+    dp.add_handler(CommandHandler("perinfo",name))
+    dp.add_handler(CommandHandler("ademic",college))
     # on noncommand i.e message - echo the message on Telegram
     dp.add_handler(MessageHandler(Filters.text, echo))
 
