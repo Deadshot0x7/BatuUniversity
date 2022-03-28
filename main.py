@@ -54,6 +54,13 @@ def college(update,context):
     update.message.reply_text("     Welcome the Ademic               ")
     update.message.reply_text("======================================")
 
+def do_something(user_input):
+    answer = "You have wrote me " + user_input
+    return answer
+
+def reply(update, context):
+    user_input = update.message.text
+    update.message.reply_text(do_something(user_input))
 
 def main():
     """Start the bot."""
