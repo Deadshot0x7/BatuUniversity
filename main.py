@@ -56,11 +56,18 @@ def college(update,context):
 
 def do_something(user_input):
     answer = "You have wrote me " + user_input
+    
     return answer
 
 def reply(update, context):
     user_input = update.message.text
+    a=[]
+    a.append(user_input)
+    print("In the Test function")            
     update.message.reply_text(do_something(user_input))
+    for i in range(0, len(a)):
+        print("The list is : ",a)
+     
 
 def main():
     """Start the bot."""
