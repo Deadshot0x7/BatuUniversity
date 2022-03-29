@@ -77,7 +77,7 @@ def main():
     dp.add_handler(CommandHandler("help", help))
     dp.add_handler(CommandHandler("issue",isue))
     dp.add_handler(CommandHandler("perinfo",name))
-    dp.add_handler(CommandHandler("ademic",college))
+    dp.add_handler(CommandHandler("ademic",reply))
     # on noncommand i.e message - echo the message on Telegram
     dp.add_handler(MessageHandler(Filters.text, echo))
 
