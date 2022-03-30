@@ -50,10 +50,11 @@ def name():
 
 def college(update,context):
 
-    update.message.reply_text("======================================") 
+    update.message.reply_text("===================================") 
     update.message.reply_text("     Welcome the Ademic               ")
-    update.message.reply_text("======================================")
-
+    update.message.reply_text("===================================")
+    user_input=update.message.text
+    
 def do_something(user_input):
     answer = "You have wrote me " + user_input
     
