@@ -1,6 +1,6 @@
 import time  as t
-
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+
 def personal(update,context):
     update.message.reply_text("Welcome to the Personal Function")
     
